@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+
 const Items = ({ handleAddItem, cartItems }) => {
   
   // Getting the Data from the API
@@ -9,7 +10,7 @@ const Items = ({ handleAddItem, cartItems }) => {
   const [apiData, setApiData] = useState([]);
 
   const fetchItems = useCallback(async () => {
-    const getData = await axios.get("src/server/dbTeste.json");
+    const getData = await axios.get("../../src/server/dbTeste.json");
     setApiData(getData.data.produtos);
   }, []);
 
