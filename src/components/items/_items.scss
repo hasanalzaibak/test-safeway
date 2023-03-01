@@ -1,0 +1,92 @@
+@import "../../styles/mixin";
+
+.items {
+  position: relative;
+  @include flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.items__button {
+  padding: 1rem;
+  width: 14rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.items__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: calc(4 * 270px + 3 * 2rem);
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: $blue;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+
+    p {
+      width: 80%;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+
+    img {
+      width: 100px;
+      border-radius: 2rem;
+      height: 100px;
+      object-fit: cover;
+    }
+  }
+}
+
+.items__cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  a {
+    text-decoration: none;
+    list-style: none;
+    i {
+      color: $dark-green;
+      font-size: 1.5rem;
+      padding: 2rem 1rem;
+      position: relative;
+    }
+    p {
+      color: $dark-green;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .items__container {
+    div {
+
+      padding: 1.5rem;
+      width: 280px;
+      height: 450px;
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}

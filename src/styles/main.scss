@@ -1,0 +1,101 @@
+// Variables
+$green: #7ebfb3;
+$dark-green: #0b2624;
+$light-green: #c9ebf2;
+$light-blue: #d5e7f2;
+$blue: #96b3d9;
+$white: #ffffff;
+$gray: #4d4d4d;
+$font: "Poppins", sans-serif;
+
+// Imports
+@import "../components/Cart/cart";
+@import "../components/Completed/completed";
+@import "../components/items/items";
+@import "../components/Receipt/receipt";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+// General Settings
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 0% 0%,
+    rgba(201, 235, 242, 1) 0%,
+    rgba(213, 231, 242, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 0% 0%,
+    rgba(201, 235, 242, 1) 0%,
+    rgba(213, 231, 242, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 0% 0%,
+    rgba(201, 235, 242, 1) 0%,
+    rgba(213, 231, 242, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 0% 0%,
+    rgba(201, 235, 242, 1) 0%,
+    rgba(213, 231, 242, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 0% 0%,
+    rgba(201, 235, 242, 1) 0%,
+    rgba(213, 231, 242, 1) 100%
+  );
+
+  font-family: $font;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  min-height: 100vh;
+  color: $dark-green;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: $dark-green;
+  padding: 3rem 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+button {
+  background-color: $dark-green;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  width: 10rem;
+  border: none;
+  outline: none;
+  color: $white;
+  font-family: $font;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
