@@ -1,6 +1,6 @@
 # Test-SafeWay
 
-Criado com React.js + Vite
+Criado com React.js + Vite + SCSS
 
 Usado tambem react-router-dom, fontawesome e axios
 
